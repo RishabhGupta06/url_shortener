@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "emmet.includeLanguages": {
+    "ejs": "html"
+  },
+  "html.format.enable": true,
+  "html.suggest.html5": true,
+  "editor.wordWrap": "on",
+  "editor.autoClosingTags": true
+}
