@@ -24,6 +24,28 @@
                     <button type="submit">Generate</button>
                 </form>
             </div>
+            <div>
+                <% if (locals.urls) { %>
+                 <table>
+                    <thead>
+                        <th>S.NO</th>
+                        <th>ShortID</th>
+                        <th>Redirect</th>
+                        <th>Clicks</th>
+                    </thead>
+                    <tbody>
+                            <% for (let i = 0; i < urls.length; i++) { %>
+                                <tr>
+                                <td><%= i + 1 %></td>
+                                <td><%= urls[i].shortId %></td>
+                                <td><%= urls[i].redirectURL %></td>
+                                <td><%= urls[i].visitHistory.length %></td>
+                                </tr>
+                            <% } %>
+                    </tbody>
+                 </table>
+                <% } %>
+            </div>
         </form>
     </div>
 </body>

@@ -21,7 +21,10 @@ async function handle_Generate_new_url(req,res){
     // return res.json({id: x});
 }
 
-
+async function handle_Get_Analytics(req,res){
+    const shortId = req.params.shortId;
+    
+}
 module.exports ={
     handle_Generate_new_url,
 }
